@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: #202022;
+    color: aliceblue;
+}
+
+.logo {
+    position: absolute;
+}
+
+h3 {
+    padding: 20px;
+}
+
+.folio {
+    color: rgb(192, 10, 192);
+}
+
+hr {
+    border-color: red;
+}
+hr:hover {
+    border-color: blue;
+}
+
+.nav-bar-hr {
+    border-color: transparent;
+}
+
+.backdrop{
+    border-color:blue;
+}
+
+#codes {
+    color: red;
+}
+
+p{
+    font-size:17px;
+}
+
+.name {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px;
+}
+
+#home {
+    background-image: url("delane-codes.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 460px;
+    background-attachment: fixed;
+}
+
+#home:hover {
+    background-attachment: scroll;
+}
+
+
+/*
+about
+*/
+
+.about {
+    text-align: center;
+}
+
+
+/*
+endOFabout
+*/
+
+
+/*
+services
+*/
+
+.software-engineering,
+.programming,
+.cyber-security {
+    display: inline-block;
+    background: #2a2a2a;
+    width: 30%;
+    height: 200px;
+    box-shadow: 0 0 5px blue;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom:10px;
+}
+
+.software-engineering:hover,
+.programming:hover,
+.cyber-security:hover {
+    display: inline-block;
+    background: #2b2c3f;
+    width: 30.3%;
+    box-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue;
+    transition: 0.7s ease-in-out;
+}
+
+h4 {
+    text-align: center;
+}
+
+ul li {
+    list-style-type: circle;
+    font-size:12px;
+    padding-right:5px;
+    margin-left:30px;
+    margin-top:2px;
+}
+
+
+/*
+endOfservices
+*/
+
+
+/*
+-------------------------mainNav---------------------------
+*/
+
+
+/*navrelatiovity*/
+
+
+/*
+nav{
+    z-index: 10;
+    position: relative;
+    top: 20%;
+    float: left;
+}
+
+*/
+
+.nav {
+    z-index: 10;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: right;
+    padding: 1em 0;
+    position: relative;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 1em;
+    position: relative;
+}
+
+.nav ul li::after {
+    content: '';
+    height: 1px;
+    width: 0%;
+    background: rgb(255, 0, 0);
+    position: absolute;
+    left: 0;
+    clear: both;
+    display: block;
+    bottom: -7px;
+    transition: all 0.7s ease-in;
+    cursor: pointer;
+}
+
+.nav ul li:hover::after {
+    width: 100%;
+}
+
+.nav ul li:last-child {
+    margin-right: 50px;
+}
+
+
+/*                 endOfMainNav*/
