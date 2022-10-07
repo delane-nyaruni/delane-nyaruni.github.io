@@ -12,7 +12,8 @@ body {
 }
 
 .companyName {
-    margin-top: 1em;
+    margin-top: .9em;
+    font-size: .8em;
 }
 
 .page-divider {
