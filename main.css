@@ -180,7 +180,7 @@ services
 .about-me-pic {
     display: inline-block;
     background: #202022;
-    width: 43%;
+    width: 40%;
     height: 200px;
     box-shadow: 0 0 5px blue;
     margin-left: 10px;
@@ -203,7 +203,7 @@ services
 .cyber-security:hover {
     display: inline-block;
     background: #2b2c3f;
-    width: 45%;
+    width: 41%;
     box-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue;
     transition: 0.7s ease-in-out;
     font-size: 15px;
@@ -246,18 +246,17 @@ p {
     text-align: center;
 }
 
-.contact ul li {
-    list-style-type: none;
+.contact ul li button a {
+    display: inline-block;
+    margin: 0 1em;
+    position: relative;
 }
 
 button img {
     width: 2em;
     height: 2em;
     border-radius: 50%;
-}
-
-button {
-    list-style: none;
+    list-style: inside;
 }
 
 
@@ -285,7 +284,7 @@ endOffooter
 
 
 /*
-ffooter-copyright
+footer-copyright
 */
 
 footer {
@@ -302,8 +301,16 @@ footer {
 
 .footer-copyright a {
     color: aquamarine;
+    text-transform: none;
+    animation: blinker 5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
 }
 
 .footer-copyright a:hover {
-    color: blue;
+    color: orangered;
 }
