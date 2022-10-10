@@ -1,0 +1,33 @@
+body {
+    background: #2a2a2a;
+    color: aliceblue;
+}
+
+form {
+    background: #202020;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #202020;
+    height: 220px;
+}
+
+.id-picture {
+    position: relative;
+    width: 30%;
+    height: 23vh;
+    background: #2a2a2a;
+    border-radius: 15px;
+    bottom: -40px;
+    left: 20px;
+    z-index: 10;
+    display: inline-flex;
+}
+
+.vertical-bar {
+    border-color: rgb(61, 61, 61);
+    height: 18vh;
+    width: 0.01px;
+    position: relative;
+    right: 10%;
+    bottom: 45%;
+}
