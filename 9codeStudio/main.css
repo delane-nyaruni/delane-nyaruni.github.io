@@ -1,0 +1,23 @@
+body {
+    color: white;
+    background: #202022;
+    overflow: hidden;
+}
+
+h1 {
+    position: relative;
+    padding-bottom: 300px;
+    font-size: 400px;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(6, 2, 255);
+    text-transform: none;
+    animation: blinker 7s linear infinite;
+    text-shadow: 0 0 5px rgb(6, 2, 255), 0 0 10px rgb(6, 2, 255), 0 0 15px rgb(6, 2, 255);
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
