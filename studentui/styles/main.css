@@ -1,0 +1,19 @@
+* {
+    padding: 30px;
+    margin: 0;
+}
+
+body {
+    background: #202022;
+    color: aliceblue;
+}
+
+img {
+    width: 40%;
+    height: 400px;
+}
+
+.logo {
+    width: 30%;
+    height: 200px;
+}
