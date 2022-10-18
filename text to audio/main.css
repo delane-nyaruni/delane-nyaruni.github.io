@@ -1,0 +1,5 @@
+button {
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 11px 11px 27px #afafaf, -11px -11px 27px #ffffff;
+}

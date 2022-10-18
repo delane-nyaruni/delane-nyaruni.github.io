@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Speech Synthesis</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        function speak(msg) {
+            const sp = new SpeechSynthesisUtterance(msg);
+            [sp.voice] = speechSynthesis.getVoices();
+            speechSynthesis.speak(sp);
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="speak('Welcome to the speech Synthesis Program')">Speak</button>
+</body>
+
+</html>
