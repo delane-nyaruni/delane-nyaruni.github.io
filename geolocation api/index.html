@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="refresh" content="2000">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Geolocation API</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+</head>
+
+<body style="text-align: center;background: rgba(22, 22, 32, 0.671);">
+    <h2>Geolocation</h2>
+    <button onclick="getUserlocation()">GPS location</button>
+    <p id="res" class="neumophism"></p>
+
+    <script>
+        var res = document.getElementById("res");
+
+        function getUserlocation() {
+            if (navigator.geolocation) navigator.geolocation.getCurrentPosition(success, error);
+            else "res.innerHTML = geolocation not supported";
+        } //eo getUserlocation()
+
+        function error(error) {
+            res.innerHTML = "Error <br> Code => " + error.code +
+                "Message =>" + error.message
+        } //eo error
+
+        function success(position) {
+            var coords = position.coords;
+            var txt = "";
+            //Always returned
+            txt = txt + " latitude : " + coords.latitude + "<br>";
+            txt = txt + " longitude : " + coords.longitude + "<br>";
+            txt = txt + " accuracy : " + coords.accuracy + "<br>";
+
+            //return if available
+            txt = txt + " altitude : " + coords.altitude + "<br>";
+            txt = txt + " altitudeAccuracy : " + coords.altitudeAccuracy + "<br>";
+            txt = txt + " heading : " + coords.heading + "<br>";
+            txt = txt + " speed : " + coords.speed + "<br>";
+            txt = txt + " timestamp : " + coords.timestamp + "<br>";
+            res.innerHTML = txt;
+
+        } //eo success(position)
+    </script>
+
+</body>
+
+</html>
