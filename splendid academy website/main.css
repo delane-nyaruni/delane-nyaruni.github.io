@@ -302,6 +302,7 @@ button {
 }
 
 button:hover {
+    transition: 1s;
     box-shadow: 0 0 8px rgba(255, 2, 213, 0.979), 0 0 13px rgb(66, 31, 219), 0 0 13px rgba(255, 2, 213, 0.979);
 }
 
@@ -353,6 +354,10 @@ footer {
 .footer-copyright a:hover {
     color: rgba(255, 2, 213, 0.979);
     text-decoration-line: none;
+}
+
+p {
+    padding: 0 20px;
 }
 
 
