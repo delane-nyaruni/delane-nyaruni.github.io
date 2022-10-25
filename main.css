@@ -3,12 +3,23 @@
     margin: 0;
 }
 
+
+/* darkmode:{background: #464646;color: white;}; page-divider:{background: rgb(255, 154, 2); */
+
 body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
     border: 0;
     margin: 0;
     padding: 0;
     background: #2a2a2a;
     color: aliceblue;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .logo {
@@ -18,6 +29,7 @@ body {
 }
 
 h3 {
+    /*h3 for main page text*/
     padding: 20px;
     text-align: center;
     font-size: 20px;
@@ -55,6 +67,7 @@ p {
 a {
     text-decoration-line: none;
     color: red;
+    font-weight: bold;
 }
 
 a:visited {
@@ -123,6 +136,7 @@ endOfMainNav
 .greeting p {
     font-size: 17px;
     padding: .5px;
+    text-align: left;
 }
 
 .name {
@@ -140,9 +154,13 @@ endOfMainNav
     background-attachment: fixed;
 }
 
+
+/*
+    //deprecated the moving picture for beta testing
 #home:hover {
     background-attachment: scroll;
 }
+*/
 
 
 /*
@@ -162,6 +180,7 @@ em {
 
 .about {
     text-align: center;
+    max-width: 500px;
 }
 
 
@@ -180,17 +199,17 @@ services
 .about-me-pic {
     display: inline-block;
     background: #202022;
-    width: 40%;
-    height: 200px;
+    width: 70%;
+    /* height: 200px;*/
     box-shadow: 0 0 5px blue;
-    margin-left: 10px;
+    margin: 10px;
     border-radius: 10px;
     padding: 15px;
     margin-bottom: 10px;
     word-wrap: inherit;
     z-index: 1;
     padding: 20px;
-    margin: 10px 25%;
+    margin: 10px 10%;
 }
 
 .about-me-pic {
@@ -203,7 +222,6 @@ services
 .cyber-security:hover {
     display: inline-block;
     background: #2b2c3f;
-    width: 41%;
     box-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue;
     transition: 0.7s ease-in-out;
     font-size: 15px;
@@ -246,40 +264,41 @@ p {
     text-align: center;
 }
 
-.contact ul li button a {
+
+/*
+social-links
+*/
+
+button {
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+    margin-left: 30px;
+    background: white;
+    border-radius: 50%;
+    border-color: white;
+    box-shadow: 0 0 5px blue, 0 0 10px white, 0 0 15px blue;
+}
+
+button:hover {
+    transition: 1s;
+    box-shadow: 0 0 6px blue, 0 0 12px blue, 0 0 17px blue;
+}
+
+.nav-footer ul li {
     display: inline-block;
-    margin: 0 1em;
+    margin: 0 .4em;
     position: relative;
 }
 
-button img {
-    width: 2em;
-    height: 2em;
-    border-radius: 50%;
-    list-style: inside;
-}
+
+/*
+endOfocial-links
+*/
 
 
 /*
 endOfcontact
-*/
-
-
-/*
-footer
-*/
-
-.footer-nav ul li {
-    display: inline;
-}
-
-.footer-nav ul li a {
-    text-align: right;
-}
-
-
-/*
-endOffooter
 */
 
 
@@ -312,5 +331,5 @@ footer {
 }
 
 .footer-copyright a:hover {
-    color: orangered;
+    color: white;
 }
