@@ -1,0 +1,77 @@
+@media(orientation:landscape) {
+    body {
+        background: #202022;
+        color: white;
+    }
+    .static {
+        background: rgb(56, 55, 55);
+    }
+    .carousel-inner {
+        width: fit-content;
+        margin: auto;
+        width: 80%;
+        height: 400px;
+    }
+    .carousel-inner .carousel-item img {
+        border-left: none;
+    }
+    hr {
+        background: grey;
+    }
+}
+
+
+/*end of mediaquery*/
+
+
+/*
+    mainNav
+  a {
+        text-decoration-line: none;
+        color: red;
+        text-transform: uppercase;
+    }
+    a:visited {
+        color: black;
+    }
+    a:hover {
+        color: blue;
+    }
+    .nav {
+        z-index: 10;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: right;
+        padding: 1em 0;
+        position: relative;
+    }
+    .nav ul li {
+        display: inline-block;
+        margin: 0 1em;
+        position: relative;
+    }
+    .nav ul li::after {
+        content: '';
+        height: 1px;
+        width: 0%;
+        background: rgb(255, 0, 0);
+        position: absolute;
+        left: 0;
+        clear: both;
+        display: block;
+        bottom: -7px;
+        transition: all 0.7s ease-in;
+        cursor: pointer;
+    }
+    .nav ul li:hover::after {
+        width: 100%;
+    }
+    .nav ul li:last-child {
+        margin-right: 20px;
+    }
+    .nav-bar-hr {
+        border-color: transparent;
+    }
+    /*                 
+    endOfMainNav
+*/
