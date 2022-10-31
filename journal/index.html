@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='mediaquery.css'>
+    <title>Journal</title>
+</head>
+<div class="container">
+    <script src="index.js"></script>
+    <p class="text-right">
+        <div class="backdrop">
+            <a href="credentials/index.html" class="signout" onclick=signout();>Signout</a></p>
+
+    <div class="note">
+        <h1>journal</h1>
+    </div>
+    <!--backdrop-->
+    </div>
+    <!--container-->
+    <div class="note-input">
+        <h5 class="new-note">Write New Note</h5>
+        <div class="note-wrapper">
+            <input type="text" id="note-title" placeholder="Title of your note" required>
+            <textarea id="note-content" placeholder="Write your note here...." rows="5" required></textarea>
+            <button id="add-note-btn" class="btn" type="button">
+          <span><i class="fas fa-plus"></i></span>
+          Add Note
+        </button>
+        </div>
+    </div>
+    <hr>
+    <div class="note-list">
+
+    </div>
+    <hr>
+    <button type="button" class="btn" id="delete-all-btn">
+      <span><i class="fas fa-trash"></i></span>
+      Delete All
+    </button>
+</div>
+<script src="js.js"></script>
+
+</body>
+
+</html>
