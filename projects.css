@@ -1,0 +1,145 @@
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: #2a2a2a;
+    color: aliceblue;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Style the navigation menu */
+
+.topnav {
+    overflow: hidden;
+    position: relative;
+    top: 55px;
+    background: #0e0e7256;
+    width: 85%;
+    margin: auto;
+    box-shadow: 0 0 4px rgb(0, 0, 255);
+    text-align: center;
+    text-shadow: 0 0 5px blue;
+}
+
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+.topnav #siggs,
+.topnav #splendid,
+.topnav #journal,
+.topnav #geolocate {
+    display: none;
+}
+
+#siggs,
+#splendid,
+#journal,
+#geolocate {
+    background: #353434;
+}
+
+
+/* Style navigation menu links */
+
+.topnav a {
+    color: rgb(198, 208, 241);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bolder;
+    display: block;
+}
+
+.blink {
+    animation: blinker 5s linear infinite;
+}
+
+
+/* Style the hamburger menu :{ z-index: 10;}*/
+
+.topnav a.icon {
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 30px;
+    z-index: 2;
+}
+
+
+/* Add a grey background color on mouse-over */
+
+.right {
+    text-align: right;
+}
+
+.inline {
+    display: inline;
+}
+
+h1 {
+    position: relative;
+    text-decoration: underline;
+    top: 30px;
+    font-size: 18px;
+    padding-bottom: 70px;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 1;
+        color: blue;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+p {
+    color: yellow;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: none;
+    color: #999;
+}
+
+.logo {
+    position: relative;
+    width: 100%;
+    height: 210px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.click-image-text {
+    font-size: 10px;
+    text-align: center;
+    color: #999;
+    position: absolute;
+    padding-top: -30px;
+    left: 20%;
+}
+
+.link {
+    font-size: 12px !important;
+    color: limegreen !important;
+    text-shadow: none !important;
+    text-decoration-line: none !important;
+}
+
+.backto {
+    padding: 10px;
+}
