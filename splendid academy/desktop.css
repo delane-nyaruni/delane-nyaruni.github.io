@@ -1,0 +1,14 @@
+@media(orientation:landscape) {
+    body {
+        background: #464646;
+        color: white;
+    }
+    .class {
+        display: block;
+        color: #00ff00;
+    }
+    /*registration css*/
+    .logo {
+        margin-left: 45%;
+    }
+}
