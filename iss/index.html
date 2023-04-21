@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <meta http-equiv="refresh" content="25">
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>ISS API</title>
@@ -10,13 +10,13 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <h2>International Space Station Location</h2>
+    <h2>ISS Location</h2>
     <p>
         latitude: [<span id="lat"></span>]<br> longitude: [<span id="lat"></span>]
     </p>
     <style>
-        body {background: rgb(63, 62, 62);
-            color: greenyellow;}
+        body {background: #222;
+            color: blue;}
         h2,p {text-align: center;
             margin-bottom: 10%;}
         p{font-family: 'Courier New', Courier, monospace;}
@@ -24,7 +24,6 @@
     <script>
         //fetch json from api and construct coordinates
         const api_url = 'https://api.wheretheiss.at/v1/satelites/25544'
-
         async function getISS() {
             const respond = await fetch(api_url);
             const data = await response.json();
@@ -36,12 +35,7 @@
             document.getElementById('lon').textContent = longitude;
         } //eo getISS()
         getISS(); //calling response  from sate
-
         //map & show over which country & timezone api
     </script>
-
-
-
 </body>
-
 </html>
