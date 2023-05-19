@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* darkmode:{background: #464646;color: white;}; page-divider:{background: rgb(255, 154, 2); */
+
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    padding: 0;
+    background: #2a2a2a;
+    color: aliceblue;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.logo {
+    position: relative;
+    left: 7px;
+    top: 4px;
+}
+
+h3 {
+    /*h3 for main page text*/
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.folio {
+    color: red;
+    text-transform: none;
+    animation: blinker 5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 1;
+        color: white;
+    }
+}
+
+hr {
+    border-color: blue;
+    margin: auto;
+}
+
+.hr75 {
+    width: 70%;
+}
+
+hr:hover {
+    border-color: red;
+}
+
+.static-bar {
+    top: 0%;
+    position: fixed;
+    background: #2d2d3ab4;
+    width: 100%;
+    z-index: 10;
+}
+
+p {
+    padding: 1em;
+}
+
+
+/*
+-------------------------mainNav---------------------------
+*/
+
+a {
+    text-decoration-line: none;
+    color: red;
+    font-weight: bold;
+}
+
+a:visited {
+    color: rgb(72, 192, 176);
+}
+
+.nav {
+    z-index: 10;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding: 0.5em 0;
+    position: relative;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin: 0 .2em;
+    position: relative;
+}
+
+.nav ul li::after {
+    content: '';
+    height: 1px;
+    width: 0%;
+    background: rgb(255, 0, 0);
+    position: absolute;
+    left: 0;
+    clear: both;
+    display: block;
+    bottom: -7px;
+    transition: all 0.7s ease-in;
+    cursor: pointer;
+}
+
+.nav ul li:hover::after {
+    width: 100%;
+}
+
+.nav ul li:last-child {
+    margin-right: 50px;
+}
+
+.nav-bar-hr {
+    border-color: transparent;
+}
+
+
+/*                 
+endOfMainNav
+*/
+
+.backdrop {
+    border-color: blue;
+}
+
+
+.backpic{
+    padding-top: 83px;
+    background-repeat: no-repeat !important;
+    width: 100% !important;
+    z-index: 0 !important;
+    margin-bottom: -118px;
+    background-blend-mode: screen;
+    max-height:750px ;
+}
+
+#codes {
+    color: red;
+}
+
+.greeting p {
+    font-size: 17px;
+    padding: .5px;
+    text-align: left;
+}
+
+.name {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px !important ;
+    padding-left: 20px !important;
+
+}
+
+.namep{
+    padding-left: 10px !important;
+}
+
+
+/*
+
+#home{
+    background-image: url("../images/delane-codes.jpeg");
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position-y: top;
+    background-position: center;
+}
+    //deprecated the moving picture for beta testing
+#home:hover {
+    background-attachment: scroll;
+}
+*/
+
+
+/*
+about
+*/
+
+#about-me{
+    z-index: 2 !important;
+}
+
+.about-me-pic {
+    background: url('../images/earth.jpg')!important;
+    z-index: 1;
+    margin: 100%;
+    width: 100%;
+}
+
+.about {
+    text-align: center;
+    max-width: 500px;
+}
+
+.about-me-pic {
+    margin: 3%;
+    height: auto;
+}
+
+
+/*
+endOFabout
+*/
+
+
+/*
+services
+*/
+
+.software-engineering,
+.programming,
+.cyber-security,
+.about-me-pic {
+    display: inline-block;
+    background: #202022;
+    width: 82%;
+    /* height: 200px;*/
+    box-shadow: 0 0 5px blue;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    z-index: 1;
+    margin-left: 5%;
+}
+
+.software-engineering:hover,
+.programming:hover,
+.cyber-security:hover {
+    display: inline-block;
+    background: #2b2c3f;
+    box-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue;
+    transition: 0.7s ease-in-out;
+    font-size: 15px;
+    color: red;
+    cursor: pointer;
+    /* flipcard transition*/
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transition: transform 4s;
+    transform-style: preserve-3d;
+    transform: rotateY(360deg);
+}
+
+h4 {
+    text-align: center;
+}
+
+ul li {
+    list-style-type: circle;
+    font-size: 12px;
+    padding-right: 5px;
+    margin-left: 30px;
+    margin-top: 2px;
+    text-overflow: inherit;
+    cursor: pointer;
+}
+
+
+/*
+endOfservices
+*/
+
+
+/*
+contact
+*/
+
+p {
+    text-align: center;
+}
+
+
+/*
+social-links
+*/
+
+button {
+    width: 25px;
+    height: 25px;
+    margin: -7px !important;
+    background: white;
+    border-radius: 50%;
+    border-color: white;
+    box-shadow: 0 0 5px blue, 0 0 10px white, 0 0 15px blue;
+}
+
+button a {
+    background-position: center;
+}
+
+button:hover {
+    transition: 1s;
+    box-shadow: 0 0 6px blue, 0 0 12px blue, 0 0 17px blue;
+}
+
+.nav-footer ul li {
+    display: inline-block;
+    position: relative;
+}
+
+
+/*
+endOfocial-links
+*/
+
+
+/*
+endOfcontact
+*/
+
+
+/*
+footer-copyright
+*/
+
+footer {
+    box-shadow: 0 0 5px red, 0 0 10px white, 0 0 15px blue;
+}
+
+.footer-copyright p {
+    color: red;
+    background: #202022;
+    margin: auto;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 13px;
+}
+
+.footer-copyright a {
+    color: blue;
+    text-transform: none;
+    animation: blinker 5s reverse infinite;
+}
+
+.footer-copyright a:hover {
+    color: white;
+}
