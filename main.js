@@ -4,17 +4,17 @@ function underMaintenace(){
 
 function helloVisitor() {
     var today = new Date();
-var hourNow = today.getHours();
-var greeting;
-if (hourNow > 18) {
-    greeting = 'Good evening!';
-} else if (hourNow > 12) {
-    greeting = 'Good afternoon!';
-} else if (hourNow > 0) {
-    greeting = 'Good morning!';
-} else {
-    greeting = 'Hello!';
-}
+    var hourNow = today.getHours();
+    var greeting;
+    if (hourNow > 18) {
+        greeting = 'Good evening!';
+    } else if (hourNow > 12) {
+        greeting = 'Good afternoon!';
+    } else if (hourNow > 0) {
+        greeting = 'Good morning!';
+    } else {
+        greeting = 'Hello!';
+    }
 
     alert(greeting + " Visitor");
 }
@@ -28,7 +28,6 @@ function myFunction1() {
         x.style.display = "block";
     }
 }
-
 
 function myFunction2() {
     var x = document.getElementById("siggs");
@@ -75,7 +74,6 @@ function myFunction6() {
     }
 }
 
-
 function myFunction7() {
     var x = document.getElementById("danborough");
     if (x.style.display === "block") {
@@ -85,7 +83,6 @@ function myFunction7() {
     }
 }
 
-
 function myFunction8() {
     var x = document.getElementById("geolocation");
     if (x.style.display === "block") {
@@ -94,7 +91,6 @@ function myFunction8() {
         x.style.display = "block";
     }
 }
-
 
 function myFunction9() {
     var x = document.getElementById("satelite");
