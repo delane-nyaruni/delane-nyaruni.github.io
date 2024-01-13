@@ -1,0 +1,74 @@
+@media (orientation:landscape ){
+
+input[type="text"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(94, 94, 255);
+    padding: 14px 10px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0 2px ease;
+}
+
+input[type="text"]:focus{
+    border-color: rgba(75, 79, 85, 0.795);
+    box-shadow: 0 0 5px rgb(94, 94, 255), 0 0 10px rgb(94, 94, 255), 0 0 15px rgb(94, 94, 255);
+}
+
+.note-item h3,
+.note-item p {
+    padding-left: 300px;
+}
+input[type="text"],
+textarea {
+    min-width: 21rem;
+    transition: ease-out;
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+    max-width: 800px !important;
+
+}
+
+textarea {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(94, 94, 255);
+    padding: 14px 10px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0 2px ease;
+}
+
+input[type="text"]:hover,
+textarea:hover {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(94, 94, 255);
+    padding: 14px 10px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0 2px ease;
+    border-color: rgba(75, 79, 85, 0.795);
+    box-shadow: 0 0 5px rgb(94, 94, 255), 0 0 10px rgb(94, 94, 255), 0 0 15px rgb(94, 94, 255);
+}
+
+textarea:focus {
+    border-color: rgba(75, 79, 85, 0.795);
+    box-shadow: 0 0 5px rgb(94, 94, 255), 0 0 10px rgb(94, 94, 255), 0 0 15px rgb(94, 94, 255);
+}
+
+.printDocumentBody{
+    left: 70%;
+}
+
+
+}/* @media (orientation:landscape ) */
