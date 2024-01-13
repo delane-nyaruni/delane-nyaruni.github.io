@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">  
+  <head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="description" content="Journal Scheduler">
+  <meta http-equiv="author" content="delane Kords">
+  <meta name="keywords" content="Digital Journal">
+  <meta name="robots" content="nofollow">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='bootstrap/bootstrap.min.csxs'>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="dark.css">
+  <link rel='stylesheet' type='text/css' media='screen' href='mediaquery.css'>
+  <title>Event Scheduler</title>
+</head>
+<body>
+  <div class="backdrop">
+    <a href="index.html" class="signout" onclick=signout();>Signout</a>
+      <p class="button-right">
+        <a href="#" class="toggle button-right">
+            <button class="toggle-button">&nbsp;</button>
+        </a>
+      </p>
+  <div class="note">
+  <h1>Scheduler</h1>
+  </div>
+  <!--backdrop-->
+</div>
+
+<h5 class="new-notes silver inline">Add Event </h5>
+<a class="new-notes silver printDocumentBody" onclick='printDocument()'>
+    <img src="./img/file-pdf.svg" width="12px;"> Print</a>
+
+  <div class="event-form">
+    <span class="evnt-date"> Event Date : </span><input type="date" id="event-date" required/>
+    <input type="text" id="event-title" placeholder="Event Title" required/>
+    <textarea type="text" id="event-content" placeholder="Event Content" rows="5" require></textarea>
+    <button id="add-event" type="button" class="btn">Add Event</button>
+  </div>
+  <hr>
+  <ul class="event-list">
+    <!-- Event items will be dynamically added here from localStorage -->
+  </ul>
+  <br>
+  <button type="button" class="btn" id="delete-all-btn" onclick="deleteAllNotes()">
+    Delete All
+  </button>
+
+<!-- footer -->
+<br><br>
+<footer>
+    <div class="footer-copyright">
+        <p>Copyright &copy; <span id="currentYear"> </span> &bullet; All Rights Reserved <br>
+            <a href="https://www.google.com/search?sa=X&nfpr=1&biw=1366&bih=606&q=9codeStudio&stick=H4sIAAAAAAAAAONgU1I1qDC0NDZMNDS0TEwyskhMTTO0MqgwsUxJS0wxNbE0SDRNMk0xWsTKbZmcn5IaXFKakpkPAJeMtKY3AAAA&mat=CdKCBK407R-9&ved=2ahUKEwjhtuD0qM_6AhU1LkQIHfpTACgQrMcEegQICRAG" target="_blank">9codeStudio</a>
+        </p>
+        <script>document.getElementById('currentYear').innerHTML =  new Date().getFullYear();</script> 
+    </div>
+</footer>
+<br>
+<!-- endOffooter -->
+
+<script>//darkmode
+    document.querySelector('.toggle-button').addEventListener
+('click',() => {
+    document.body.classList.toggle('dark');
+    localStorage.setItem('dark', 1);
+    // get item from storage 
+function getDataFromStorage() {
+    return localStorage.getItem("dark") ? JSON.parse(localStorage.getItem("dark")) : [];
+}
+})
+</script>
+
+<script src="fullscreen.js"></script>
+<script src="bootstrap/bootstrap.bundle.min.jsx"></script>
+<script src="index.js"></script>
+ <script src="main.js"></script>
+</body>
+</html>
