@@ -1,2 +1,2 @@
-# Delane Codes
-Delane Codes portfolio Site
+# Delane Nyaruni
+Delane Nyaruni portfolio Site
