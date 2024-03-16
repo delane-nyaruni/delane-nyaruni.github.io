@@ -1,0 +1,32 @@
+{
+  "description": "CSS, and SVG framework",
+  "keywords": [
+    "icon",
+    "svg"
+  ],
+  "homepage": "https://delane-codes.github.io",
+  "bugs": {
+    "url": "http://github.com/FortAwesome/Font-Awesome/issues"
+  },
+  "author": {
+    "name": "Delane Nyaruni",
+    "email": "delaneoncodes@gmail.com",
+    "web": "https://delane-codes.github.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FortAwesome/Font-Awesome"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "dependencies": {},
+  "version": "5.15.3",
+  "name": "@fortawesome/fontawesome-free",
+  "main": "js/fontawesome.js",
+  "style": "css/fontawesome.css",
+  "license": "(CC-BY-4.0 AND OFL-1.1 AND MIT)",
+  "scripts": {
+    "postinstall": "node attribution.js"
+  }
+}
