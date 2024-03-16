@@ -1,0 +1,31 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://delane-nyaruni.github.io/sitemap.xml
+
+User-agent: Googlebot
+Disallow:
+
+User-agent: Bingbot
+Disallow:
+
+User-agent: Slurp
+Disallow:
+
+User-agent: DuckDuckBot
+Disallow:
+
+User-agent: *
+Disallow: /contact
+
+User-agent: *
+Disallow: /about
+
+User-agent: *
+Disallow: /services
+
+User-agent: *
+Disallow: /portfolio
+
+User-agent: *
+Disallow: /home
