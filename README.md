@@ -1,4 +1,4 @@
-# delane codes nyaruni portfolio website
+# delane nyaruni portfolio website
 
 ## Run this website
 
@@ -6,5 +6,5 @@ Hit **autorun** file!
 
 ## Author & License
 
-[user:delane codes nyaruni]
+[user:delane nyaruni]
 [email:delaneoncodes@gmail.com]
