@@ -1,4 +1,8 @@
-# Delane Nyaruni portfolio website
+# delane nyaruni portfolio website
+
+## Run this website
+
+Hit **autorun** file!
 
 ## Author & License
 
