@@ -1,10 +1,6 @@
 # delane nyaruni portfolio website
 
-## Run this website
+## Author 
 
-Hit **autorun** file!
-
-## Author & License
-
-[user:delane nyaruni]
-[email:delaneoncodes@gmail.com]
+[user: delane nyaruni]
+[email: delaneoncodes@gmail.com]
