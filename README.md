@@ -1,4 +1,4 @@
-# delane nyaruni portfolio website
+# Delane Nyaruni portfolio website
 
 ## Author & License
 
