@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile Settings</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Add your custom CSS file here -->
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>User Profile Settings</h1>
+    </div>
+  </header>
+  
+  <main>
+    <div class="container">
+      <section class="profile-section">
+        <h2>Profile Information</h2>
+        <div class="profile-details">
+          <div class="profile-picture">
+            <img src="profile-picture.jpg" alt="Profile Picture">
+            <button class="change-picture-btn">Change Picture</button>
+          </div>
+          <div class="profile-info">
+            <form>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="John Doe">
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="johndoe@example.com">
+              </div>
+              <div class="form-group">
+                <label for="role">Role:</label>
+                <input type="text" id="role" name="role" value="Administrator">
+              </div>
+              <button type="submit">Save Changes</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+      <section class="password-section">
+        <h2>Change Password</h2>
+        <form>
+          <div class="form-group">
+            <label for="current-password">Current Password:</label>
+            <input type="password" id="current-password" name="current-password">
+          </div>
+          <div class="form-group">
+            <label for="new-password">New Password:</label>
+            <input type="password" id="new-password" name="new-password">
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password">
+          </div>
+          <button type="submit">Change Password</button>
+        </form>
+      </section>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 YourWebsite. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
