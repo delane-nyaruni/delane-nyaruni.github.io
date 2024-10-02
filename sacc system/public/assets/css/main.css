@@ -1,0 +1,296 @@
+
+/* Safari */
+:-webkit-full-screen {
+    background-color: transparent !important;
+  }
+  
+  /* IE11 */
+  :-ms-fullscreen {
+    background-color: transparent !important;
+  }
+  
+  /* Standard syntax */
+  :fullscreen {
+    background-color: transparent !important;
+  }
+
+
+body::-webkit-scrollbar {
+  display: none !important;
+}
+
+.main {
+    background: #ffffff !important;
+}
+
+.black{
+    background: black !important;
+    color: red !important;
+}
+
+body {
+    -ms-overflow-style: none !important;
+    /* IE and Edge */
+    scrollbar-width: none !important;
+    /* Firefox */  
+    background: rgba(255, 255, 255, 0.955) !important;
+    color:black !important;
+}
+
+.header {
+    background: rgba(255, 255, 255, 0.955)  !important;
+    color: black !important;
+
+}
+.formBackgroundUI{
+    background: rgba(255, 255, 255, 0.955) !important;
+    color: rgb(0, 0, 0);
+}
+
+.msgError {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f44336;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 10 !important;
+}
+.msgSuccess {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #36f485;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 10 !important;
+
+}
+
+.tab-ten{
+    padding: .2em;
+}
+
+.dashboard {
+    background: rgba(146, 149, 212, 0.885) !important;
+}
+
+
+.glass {
+    background: rgba(226, 227, 255, 0.955) !important;
+    color: black !important;
+    border-color: rgba(160, 160, 160, 0.308) !important;
+}
+
+.cardBorderBoys {
+    border-color: blue !important;
+}
+.iconBoys{
+    color:blue !important ;
+}
+.cardBorderGirls {
+    border-color: pink !important;
+}
+.iconGirls{
+    color: pink !important;
+
+}
+.cardBorderTotal {
+    border-color: rgb(13, 221, 204) !important;
+}
+.iconTotal{
+    color: rgb(13, 221, 204) !important;
+}
+.cardBorderPaid {
+    border-color: rgb(42, 224, 112) !important;
+}
+.iconPaid{
+    color: rgb(42, 224, 112) !important;
+}
+
+.logo {
+    margin-left: 5px !important;
+    width: 70px !important;
+    height: 70px !important;
+}
+
+.pink {
+    color: rgb(248, 151, 167) !important;
+    border-left-color: rgb(248, 151, 167) !important;
+    border-left-width: 3px !important;
+}
+
+
+
+
+/*about system page*/
+
+.auto {
+    margin: auto !important;
+}
+
+
+/*login page*/
+
+.transparent {
+    border-color: transparent !important;
+}
+
+
+/*register page*/
+
+textarea {
+    border-radius: 15px !important;
+}
+
+.subjectspace {
+    padding-left: 13px !important;
+}
+
+/*alert msgs*/
+
+
+.iconBackground{
+    color: #0051ff !important;
+    text-shadow: .3px .3px #ff0000 !important;}
+
+.iconsDashboard{
+    color: #0051ff !important;
+    text-shadow: .3px .3px #ff0000 !important;
+}
+
+.modal-footer-hidden{
+    border-color: transparent !important;
+}
+
+/* 
+Tables .page-item.active
+*/
+li.paginate_button.page-item.active{
+    background-color: #f50a0a !important;
+    color: rgb(0, 195, 255) !important;
+}
+/*
+#schoolAnalyticsDigits
+
+*/
+#form1FinanceAnalyticsDigits,
+#form2FinanceAnalyticsDigits,
+#form3FinanceAnalyticsDigits,
+#form4FinanceAnalyticsDigits,
+#form5FinanceAnalyticsDigits,
+#form6FinanceAnalyticsDigits,
+#form7FinanceAnalyticsDigits{color: #00ff0d;
+    cursor: pointer;
+    position: absolute;
+    margin: auto;
+    font-size:3.9em;
+    text-shadow: 5px 5px 5px black;
+    right: 27%;
+    top: 35%;
+}
+
+.formTotalStudents{
+    color: white !important;
+}
+
+.percentageSign{
+    font-size: 3.3rem;
+    top: 20%;
+}
+
+/*
+    payment modal
+*/
+.paymentSuccess {
+    position: fixed;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #36f485;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 10 !important;
+
+}
+.confirmPaymentKey{
+    color:grey;
+}
+.confirmPaymentColor{
+    color:white;
+}
+
+.bktodashbrd{
+    position: relative;
+    right: 90%;
+    top: -2em;
+}
+
+.bktodashbrd{
+    position: relative;
+    right: 2em;
+    top: -2em;
+}
+.noScrollBar::-webkit-scrollbar {
+    display: none !important;
+}
+.noScrollBar{
+    -ms-overflow-style: none !important;
+    /* IE and Edge */
+    scrollbar-width: none !important;
+    /* Firefox */  
+}
+
+
+@media (orientation:portrait){
+    #form1FinanceAnalyticsDigits,
+#form2FinanceAnalyticsDigits,
+#form3FinanceAnalyticsDigits,
+#form4FinanceAnalyticsDigits,
+#form5FinanceAnalyticsDigits,
+#form6FinanceAnalyticsDigits,
+#form7FinanceAnalyticsDigits{
+    color: #00ff0d;
+    font-size:3em;
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+.receiptOutImg{
+    margin: auto;
+    margin-left: 25% !important;
+}
+}
+
+.receiptOutImg{
+    margin-left: 45% ;
+}
+#printOutStudentName,
+#printOutStudentSurname,
+#printOutStudentForm,
+#printOutStudentClass,
+#printOutStudentAmountPaid,
+#printOutStudentPaymentMode{
+    color: black !important;
+}
+/*
+    DEFAULT    COLORS
+*/
+.blue{
+    color: blue !important;
+}
+
+.white{
+    /*color: white !important;*/
+    background: white !important;
+}

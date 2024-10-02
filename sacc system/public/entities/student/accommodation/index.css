@@ -1,0 +1,286 @@
+/* darkmode:{background: #464646;color: white;}; page-divider:{background: rgb(255, 154, 2); */
+
+body {
+    background: rgb(255, 255, 255);
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.page-divider {
+    width: 90%;
+    background: orange;
+}
+
+.static {
+    position: fixed;
+    width: 100%;
+    z-index: 7;
+    background: inherit;
+}
+
+
+
+/* Style the navigation menu */
+
+
+.carousel-inner {
+    padding-top: 11px;
+    z-index: 5;
+    box-shadow: 0 0 20px rgb(255, 154, 2), 0 0 40px white, 0 0 40px rgb(255, 154, 2);
+}
+
+
+
+/*
+    services
+    */
+
+.row>.column {
+    padding: 0 8px;
+    
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Create four equal columns that floats next to eachother */
+
+.column {
+    display: inline;
+}
+
+.column .hover-shadow {
+    margin: 0 2px;
+}
+
+.scrollmenu .row {
+    display: contents;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 8;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.438);
+    /* IE and Edge */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin: auto;
+}
+
+.modal::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+    margin: auto;
+    padding: 0;
+    width: 96%;
+    height: 70%;
+    border:none;
+    max-width: 1200px;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: red;
+    position: relative;
+    top: 40px;
+    right: 40px;
+    font-size: 35px;
+    font-weight: bold;
+    z-index: 4;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Hide the slides by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: silver;
+    background-color: silver;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* Caption text */
+
+.caption-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.719);
+    padding: 2px 16px;
+    color: black;
+    color: rgb(255, 154, 2);
+    color: silver;
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+.hover-shadow {
+    transition: 0.3s;
+    margin: 90px;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px silver, 0 3px 7px silver;
+    height:150px;
+    width:150px;
+}
+img.hover-shadow {
+    transition: 0.3s;
+    margin: 90px;
+   border-color: silver;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px silver, 0 6px 20px silver;
+      border-radius: 5px;
+  
+}
+
+.center {
+    align-items: center;
+    text-align: center;
+}
+
+.click-image-text {
+    padding-top: 10px;
+    font-size: 10px;
+    text-align: center;
+    color: #999;
+}
+
+
+div.scrollmenu {
+    background-color: white;
+    background: transparent;
+    overflow: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+div.scrollmenu::-webkit-scrollbar {
+    color: rebeccapurple;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: white;
+}
+
+
+
+
+
+
+iframe {
+    z-index: 5;
+    box-shadow: 0 0 3px silver, 0 0 5px white, 0 0 12px silver;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe:active {
+    cursor: all-scroll;
+}
+
+
+
+
+

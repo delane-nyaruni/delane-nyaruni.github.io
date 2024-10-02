@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Register Property</title>
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template-->
+    <link href="../../../assets/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../../../assets/css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="bg-gradient-primary main">
+    <div class="container">
+
+<section class="contact-form">
+
+    <h3 class="h3 form-title">Report</h3>
+    <form action="#" method="post" class="form" data-form>
+      <div class="input-wrapper">
+        <input type="text" name="fullname" id="userName" class="form-input" placeholder="Full name" required data-form-input>
+<br>
+        <input type="email" name="email" id="userEmail" class="form-input" placeholder="Email address" required data-form-input>
+      </div>
+<br>
+      <textarea name="message" id="emailBody" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+<br>
+      <button class="form-btn index0" type="submit" onclick="sendEmailMsg()"  data-form-btn>
+        <span>Send Message</span>
+      </button>
+
+    </form>
+
+</section>
+</div>
+
+
+<script src="../api.email/api.email.js"></script>
+</body>
