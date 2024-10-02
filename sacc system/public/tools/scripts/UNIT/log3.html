@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+    <style>
+        .error-message {
+            color: red;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var userType = document.getElementById("userType").value;
+            var email = document.getElementById("username").value;
+            var errorContainer = document.getElementById("error-container");
+            var isValid = true;
+
+            if (!validateEmail(email)) {
+                displayErrorMessage("Please enter a valid email address.", errorContainer);
+                isValid = false;
+            }
+
+            if (userType === "" || (userType !== "student" && userType !== "landlord")) {
+                displayErrorMessage("Please select a user type (Student or Landlord).", errorContainer);
+                isValid = false;
+            }
+
+            return isValid;
+        }
+
+        function validateEmail(email) {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
+        }
+
+        function displayErrorMessage(message, container) {
+            container.innerHTML = '<p class="error-message">' + message + '</p>';
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <label for="username">Email:</label>
+        <input type="text" id="username" name="username">
+        
+        <label for="userType">User Type:</label>
+        <select id="userType">
+            <option value=""></option>
+            <option value="student">Student</option>
+            <option value="landlord">Landlord</option>
+        </select>
+        
+        <div id="error-container"></div>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

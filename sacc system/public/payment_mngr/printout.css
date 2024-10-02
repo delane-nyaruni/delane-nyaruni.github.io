@@ -1,0 +1,11 @@
+.qrPositioning{
+    position: relative;
+    margin: 0 30%;
+    z-index: 3;
+}
+@media (orientation:portrait) {
+    .qrPositioning{
+        position: relative;
+        margin: 0 -50%;
+    }
+}

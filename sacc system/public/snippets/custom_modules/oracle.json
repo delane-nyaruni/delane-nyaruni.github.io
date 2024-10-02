@@ -1,0 +1,21 @@
+
+
+{"student1":{
+    "studentName": "delane",
+    "studentSurname": "nyaruni",
+    "studentForm": 4,
+    "studentGender":["m"],
+    "studentNational_id": "632048251s49",
+    "studentAge": 25
+    },
+"student2":{
+    "studentName": "tariro",
+    "studentSurname": "nyaruni",
+    "studentForm": 1,
+    "studentGender":["f"],
+    "studentNational_id": "638534578d57",
+    "studentAge": 21
+    }
+
+
+}

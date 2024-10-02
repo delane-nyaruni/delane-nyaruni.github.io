@@ -1,0 +1,67 @@
+<?xml version="1.0" standalone="yes"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-50 0 200 100">
+  <g id="qrcode"/>
+  <foreignObject x="-50" y="0" width="100" height="100">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="padding:0; margin:0">
+      <div >
+        <input id="text" type="hidden" value="studentid" name="qrCodeData" style="border:0; position:relative; margin:0; padding:0px;"/>
+      </div>
+      <script type="application/ecmascript" src="qrcode.js"></script>
+      <script type="application/ecmascript" src="idGen-Engine.js"></script>
+      <script type="application/ecmascript">
+        var elem = document.getElementById("qrcode");
+        var qrcode = new QRCode(elem, {
+            width : 100,
+            height : 100,
+            colorDark: "blue", 
+	          colorLight: "transparent",
+        });
+
+        
+
+
+        var studentIdShuffle = {
+    Student:{
+        studentName: 'delane',
+        studentSurname: 'nyaruni',
+        studentForm: 4,
+        studentGender:['m'],
+        studentNational_id: '632048251s49',
+        studentAge: 25, 
+     
+    }    
+};
+
+function IdGeneratorEngine (studentName, studentSurname, studentForm, studentGender, studentNational_id, studentAge ) {
+    var studentName = String(studentIdShuffle.Student.studentName).toUpperCase().substring(0,1);
+    var studentSurname = String(studentIdShuffle.Student.studentSurname).toUpperCase().substring(0,1);
+    var studentForm = String(studentIdShuffle.Student.studentForm).toUpperCase().substring(0,1);
+    var studentGender = String(studentIdShuffle.Student.studentGender).toUpperCase().substring(0,1);
+    var studentNational_id = String(studentIdShuffle.Student.studentNational_id).toUpperCase().substring(9,10);
+    var studentAge = //reverse the returned age to the IdGenerator 
+                    String(studentIdShuffle.Student.studentAge).charAt(1) + 
+                    String(studentIdShuffle.Student.studentAge).charAt(0);
+
+    var student_Id = `ID Num: ${studentName}${studentSurname}${studentForm}${studentGender}${studentNational_id}${studentAge}`;
+    return student_Id;        
+}
+
+var idNum = IdGeneratorEngine();
+
+document.querySelector('qrcode')
+        function makeCode () {
+            var elText = document.getElementById("text");
+     elText.value = idNum; 
+		qrcode.makeCode(elText.value);
+            qrcode.makeCode(elText.value);
+        }
+
+        makeCode();
+
+        document.getElementById("text").onkeyup = function (e) {
+                makeCode();
+        };
+      </script>
+    </body>
+  </foreignObject>
+</svg>

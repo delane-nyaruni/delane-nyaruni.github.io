@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Save PDF with Current Date in Filename</title>
+</head>
+<body>
+  <button onclick="generatePDF()">Generate PDF</button>
+
+  <script>
+    function generatePDF() {
+      const now = new Date();
+      const dateTimeString = now.toLocaleString().replace(/\/|,|\s|:/g, '_'); // Replace special characters with underscore
+      const content = ``;
+      const blob = new Blob([content], { type: 'application/pdf' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'out_' + dateTimeString + '.pdf';
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>

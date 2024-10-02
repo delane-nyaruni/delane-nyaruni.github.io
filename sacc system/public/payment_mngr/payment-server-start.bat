@@ -1,0 +1,1 @@
+rem start acid transatction server for the payment network to make a successfull the operational transaction & update the student perwotk 7 THEN IPLOAD THE FIURST THE BSEY WA ALREAFY INTO 4Q5
