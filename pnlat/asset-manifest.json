@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/pnlat/static/css/main.dffedf40.css",
+    "main.js": "/pnlat/static/js/main.93744515.js",
+    "static/media/DRMS.png": "/pnlat/static/media/DRMS.97bdc46b5df3e23a965a.png",
+    "static/media/Help1.png": "/pnlat/static/media/Help1.6ba94d8a3db965526168.png",
+    "static/media/Help3.png": "/pnlat/static/media/Help3.cef714b39668cc038e72.png",
+    "static/media/Help2.png": "/pnlat/static/media/Help2.33d0b7a84e9c3294cc71.png",
+    "static/media/kumenberg system schema v1.0.0.pdf": "/pnlat/static/media/kumenberg system schema v1.0.0.ccc60b0196433f45ef2c.pdf",
+    "index.html": "/pnlat/index.html",
+    "main.dffedf40.css.map": "/pnlat/static/css/main.dffedf40.css.map",
+    "main.93744515.js.map": "/pnlat/static/js/main.93744515.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dffedf40.css",
+    "static/js/main.93744515.js"
+  ]
+}
