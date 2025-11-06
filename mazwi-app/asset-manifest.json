@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.620f8bfd.css",
+    "main.js": "/static/js/main.718eacc2.js",
+    "static/media/DRMS.png": "/static/media/DRMS.97bdc46b5df3e23a965a.png",
+    "static/media/MAZWI.png": "/static/media/MAZWI.dc9f02d565e59c8e6cfb.png",
+    "static/media/Help1.png": "/static/media/Help1.6ba94d8a3db965526168.png",
+    "static/media/Help3.png": "/static/media/Help3.cef714b39668cc038e72.png",
+    "static/media/Help2.png": "/static/media/Help2.33d0b7a84e9c3294cc71.png",
+    "static/media/kumenberg system schema v1.0.0.pdf": "/static/media/kumenberg system schema v1.0.0.ccc60b0196433f45ef2c.pdf",
+    "index.html": "/index.html",
+    "main.620f8bfd.css.map": "/static/css/main.620f8bfd.css.map",
+    "main.718eacc2.js.map": "/static/js/main.718eacc2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.620f8bfd.css",
+    "static/js/main.718eacc2.js"
+  ]
+}
